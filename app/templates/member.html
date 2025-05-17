@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Участник экипажа</h2>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4 text-center">
+      <img src="{{ member.photo }}" class="img-fluid rounded-start mt-3" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ member.name }}</h5>
+        <p class="card-text">
+          <strong>Профессии:</strong>
+          <ul class="list-group list-group-flush">
+            {% for prof in member.professions | sort %}
+              <li class="list-group-item">{{ prof }}</li>
+            {% endfor %}
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

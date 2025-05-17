@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Иван Петров",
+        "photo": "/static/img/ivan.jpg",
+        "professions": ["Командир", "Инженер", "Пилот"]
+    },
+    {
+        "name": "Ольга Смирнова",
+        "photo": "/static/img/olga.jpg",
+        "professions": ["Медик", "Биолог"]
+    },
+    {
+        "name": "Алексей Козлов",
+        "photo": "/static/img/alexey.jpg",
+        "professions": ["Программист", "Электронщик", "Техник"]
+    }
+]
