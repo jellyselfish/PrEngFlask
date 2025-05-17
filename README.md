@@ -1,4 +1,4 @@
 # PrEngFlask
 Задание по программной инженерии для знакомства с Flask. Общее ТЗ: разрабатывается приложение для некоторой фирмы.
 
-Полный проект доступен на [гите](https://github.com/jellyselfish/PrEngFlask).
+Полный проект доступен на [гитхабе](https://github.com/jellyselfish/PrEngFlask).
