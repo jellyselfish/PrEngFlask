@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Ваша анкета успешно принята</h2>
+<ul class="list-group">
+    <li class="list-group-item"><strong>Фамилия ИО:</strong> {{ fullname }}</li>
+    <li class="list-group-item"><strong>Дата рождения:</strong> {{ birthdate }}</li>
+    <li class="list-group-item"><strong>Пол:</strong> {{ gender }}</li>
+    <li class="list-group-item"><strong>Образование:</strong> {{ education }}</li>
+    <li class="list-group-item"><strong>Вакансия:</strong> {{ job }}</li>
+    <li class="list-group-item"><strong>Адрес:</strong> {{ address }}</li>
+    <li class="list-group-item"><strong>Телефон:</strong> {{ phone }}</li>
+    <li class="list-group-item"><strong>E-mail:</strong> {{ email }}</li>
+</ul>
+{% endblock %}

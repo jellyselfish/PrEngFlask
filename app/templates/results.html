@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты отбора</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap @5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h1 class="text-center">🎉 Поздравляем!</h1>
+    <h2>Претендент: {{ nickname }}</h2>
+    <h4>Этап отбора: {{ level }}</h4>
+    <p>Текущий рейтинг: <strong>{{ rating }}</strong></p>
+
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+             style="width: {{ rating * 10 }}%;" aria-valuenow="{{ rating }}" aria-valuemin="0" aria-valuemax="10">
+            {{ rating * 10 }}%
+        </div>
+    </div>
+</body>
+</html>
