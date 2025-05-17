@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реклама с картинкой</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap @5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="container mt-4">
+    <div class="text-center">
+        <h1 class="main-title">ООО "Технологии Будущего"</h1>
+        <p class="lead">Продукт №1 — лучший в своём классе.</p>
+        <p class="lead">С нами вы достигнете новых высот!</p>
+        <p class="lead">Технологии будущего уже сегодня.</p>
+        <img src="{{ url_for('static', filename='img/company.png') }}" class="img-fluid rounded mt-3" alt="Компания">
+        <p class="mt-2 text-muted">Надёжные решения для вашего бизнеса</p>
+    </div>
+</body>
+</html>
