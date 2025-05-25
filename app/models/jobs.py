@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from app.extensions import db
 from .users import User
-from . import db
 
 
 class Job(db.Model):
@@ -17,3 +17,5 @@ class Job(db.Model):
     is_finished = db.Column(db.Boolean, default=False)
 
     leader = db.relationship(lambda: User, foreign_keys=[team_leader])
+
+print(id(db))

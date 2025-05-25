@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Работы{% endblock %}
+{% block content %}
+<h2>Список работ</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>Описание</th><th>Руководитель</th><th>Часы</th><th>Статус</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job.id }}</td>
+            <td>{{ job.job }}</td>
+            <td>{{ job.leader.surname }} {{ job.leader.name }}</td>
+            <td>{{ job.work_size }}</td>
+            <td>{{ '✅' if job.is_finished else '⏳' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

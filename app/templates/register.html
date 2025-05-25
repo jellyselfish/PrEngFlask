@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+<h2>Регистрация нового сотрудника</h2>
+<form method="post">
+    <div class="mb-3">
+        <label>Фамилия</label>
+        <input type="text" name="surname" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Имя</label>
+        <input type="text" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Возраст</label>
+        <input type="number" name="age" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Должность</label>
+        <input type="text" name="position" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Профессия</label>
+        <input type="text" name="speciality" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Адрес</label>
+        <input type="text" name="address" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Пароль</label>
+        <input type="password" name="password" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Подтвердите пароль</label>
+        <input type="password" name="confirm_password" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+</form>
+{% endblock %}
