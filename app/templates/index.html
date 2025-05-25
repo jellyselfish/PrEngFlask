@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Девиз</title>
-</head>
-<body>
-    <h1>Всё возможно — всё технологично!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Список работ</h2>
+
+{% if current_user.is_authenticated %}
+    <a href="{{ url_for('main.add_job') }}" class="btn btn-success mb-3">Добавить работу</a>
+{% endif %}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Описание работы</th>
+      <th>Руководитель</th>
+      <th>Часы</th>
+      <th>Статус</th>
+      <th>Действия</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for job in jobs %}
+    <tr>
+      <td>{{ job.id }}</td>
+      <td>{{ job.job }}</td>
+      <td>{{ job.leader.surname }} {{ job.leader.name }}</td>
+      <td>{{ job.work_size }}</td>
+      <td>{{ 'Завершена' if job.is_finished else '⏳ В процессе' }}</td>
+      <td>
+        {% if current_user.is_authenticated %}
+          {% if current_user.id == job.team_leader or current_user.id == 1 %}
+            <a href="{{ url_for('main.edit_job', id=job.id) }}" class="btn btn-warning btn-sm me-1">Изменить</a>
+            <a href="{{ url_for('main.delete_job', id=job.id) }}" class="btn btn-danger btn-sm">Удалить</a>
+          {% endif %}
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from app.extensions import db
-from .users import User
+from app.models.users import User
 
 
 class Job(db.Model):
@@ -18,4 +18,12 @@ class Job(db.Model):
 
     leader = db.relationship(lambda: User, foreign_keys=[team_leader])
 
-print(id(db))
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'team_leader': self.team_leader,
+            'job': self.job,
+            'work_size': self.work_size,
+            'collaborators': self.collaborators,
+            'is_finished': self.is_finished
+        }

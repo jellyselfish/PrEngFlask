@@ -1,4 +1,4 @@
-from .users import User
+from app.models.users import User
 from flask_login import UserMixin
 
 

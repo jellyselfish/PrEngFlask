@@ -3,6 +3,7 @@ from flask_login import LoginManager
 
 from app.extensions import db
 from routers.main_routers_28 import bp
+from jobs_api import jobs_api
 
 
 from app.models.login_model import LoginUser
@@ -37,6 +38,7 @@ def create_session():
 
 
 app.register_blueprint(bp)
+app.register_blueprint(jobs_api)
 
 with app.app_context():
     db.create_all()

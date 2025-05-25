@@ -4,30 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e06780-2839-46ad-9b4e-b837584aab86" name="Changes" comment="13-15 tasks done">
-      <change afterPath="$PROJECT_DIR$/app/extensions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main_16_19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main_20_26.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main_27.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/misc/largest_teams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/departments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/job_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/login_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/login_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/main_routers_16_19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/main_routers_20_26.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/main_routers_27.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/Амин дз комната.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/дз Аиша дороги.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/add_job.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/jobs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+    <list default="true" id="73e06780-2839-46ad-9b4e-b837584aab86" name="Changes" comment="up to 27 tasks are done">
+      <change afterPath="$PROJECT_DIR$/app/jobs_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main_28.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main_30.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routers/main_routers_28.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main_27.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_27.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/login_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/login_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/jobs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +57,15 @@
     "Python.main_1_4.executor": "Run",
     "Python.main_20_26.executor": "Run",
     "Python.main_27.executor": "Run",
+    "Python.main_28.executor": "Run",
+    "Python.main_29.executor": "Run",
+    "Python.main_30.executor": "Run",
     "Python.main_5_7.executor": "Run",
     "Python.main_8_10.executor": "Run",
     "Python.main_routers.executor": "Run",
     "Python.main_routers_11_12.executor": "Run",
     "Python.main_routers_20_26.executor": "Run",
+    "Python.main_routers_29.executor": "Run",
     "Python.main_routers_8_10.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -159,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747497563338</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="up to 27 tasks are done">
+      <option name="closed" value="true" />
+      <created>1748209359219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748209359219</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +167,21 @@
     <MESSAGE value="5-10 tasks done" />
     <MESSAGE value="11-12 tasks done" />
     <MESSAGE value="13-15 tasks done" />
-    <option name="LAST_COMMIT_MESSAGE" value="13-15 tasks done" />
+    <MESSAGE value="up to 27 tasks are done" />
+    <option name="LAST_COMMIT_MESSAGE" value="up to 27 tasks are done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/main_28.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/models/users.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
